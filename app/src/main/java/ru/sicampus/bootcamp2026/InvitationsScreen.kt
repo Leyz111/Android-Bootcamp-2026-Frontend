@@ -127,7 +127,7 @@ fun MeetingInvitation(name: String) {
                 horizontalArrangement = Arrangement.Center
             ) {
                 Text(
-                    text = if (name.isEmpty()) "Приглашение" else "$name"
+                    text = name.ifEmpty { "Приглашение" }
                 )
             }
             Row(
