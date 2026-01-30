@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import ru.sicampus.bootcamp2026.screens.CreateInviteScreen
 import ru.sicampus.bootcamp2026.screens.InvitesScreen
 import ru.sicampus.bootcamp2026.screens.ProfileScreen
+import ru.sicampus.bootcamp2026.screens.ScheduleScreen
 
 @Composable
 fun NavGraph(navHostController: NavHostController) {
@@ -22,7 +23,7 @@ fun NavGraph(navHostController: NavHostController) {
             CreateInviteScreen()
         }
         composable("ScheduleScreen") {
-            //ScheduleScreen()
+            ScheduleScreen()
         }
     }
 }
